@@ -66,3 +66,8 @@ At the end of the deployment process you will see:
 ```bash
 Deploy complete
 ```
+  
+#### 2.5 Chef Automate Credentials
+The deployment process writes login credentials to the `automate-credentials.toml` in your current working directory.
+  
+  
