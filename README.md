@@ -71,3 +71,17 @@ Deploy complete
 The deployment process writes login credentials to the `automate-credentials.toml` in your current working directory.
   
   
+#### 2.6 Set the Chef Infra Server User and Org
+  
+First create a `user` on the Chef Server.  The `.pem` file will be used on your developer Chef Workstation machine.
+```bash
+sudo chef-server-ctl user-create Your_User_Name chef user Your_User_Name@email.com 'Your_Password' --filename $HOME/Your_User_Name.pem
+```
+  
+Next, create an organisation for the Chef Infra Server.  The `.pem` file will be used as the 1 time validation key to bootstrap your Windows and Linux nodes.
+```bash
+sudo chef-server-ctl org-create Your_Org_Name 'automate' --association_user Your_User_Name  --filename $HOME/Your_Org_Name-validator.pem
+```
+  
+You will need to copy both `.pem` files from the Chef Automate server as they will be needed on the developer Chef Workstation.
+  
