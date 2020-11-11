@@ -85,3 +85,44 @@ sudo chef-server-ctl org-create Your_Org_Name 'automate' --association_user Your
   
 You will need to copy both `.pem` files from the Chef Automate server as they will be needed on the developer Chef Workstation.
   
+  
+  
+## Install Chef Workstation
+Chef Workstation gives you everything you need to get started with Chef - ad hoc remote execution, remote scanning, configuration tasks, cookbook creation tools as well as robust dependency and testing software - all in one easy-to-install package.  
+  
+Chef Workstation includes:
+- Chef Infra Client
+- Chef InSpec
+- chef and knife command line tools
+- Testing tools such as Test Kitchen, ChefSpec, and Cookstyle
+- Everything else needed to author cookbooks and upload them to the Chef Infra Server
+  
+#### 1. System Requirements
+Minimum system requirements:
+- RAM: 2GB
+- Disk: 4GB
+- Running minimum settings may limit your ability to take advantage of Chef Workstation tools such as Test Kitchen which creates and manages virtualized test environments.
+  
+Recommended system requirements:
+- RAM: 4GB
+- Disk 8GB
+  
+#### 2. Installation
+The Chef Workstation installer must run as a privileged user.  
+  
+Chef Workstation installs to /opt/chef-workstation/ on macOS / Linux and C:\opscode\chef-workstation\ on Windows. These file locations should help avoid interference between these components and other applications that may be running on the target machine.  
+  
+##### 2.1 macOS
+1. Dependency: Xcode is recommended for running Chef Workstation on macOS. While Chef Workstation works without Xcode, it is required for native Ruby Gem installation. Run xcode-select --install from the terminal to install Xcode.  
+2. Visit the Chef Workstation downloads page and select the appropriate package for your macOS version. Click on the Download button.  https://downloads.chef.io/products/workstation#mac_os_x
+3. Follow the steps to accept the license and install Chef Workstation.  
+  
+Alternately, install Chef Workstation using Homebrew:  
+```bash
+brew cask install chef-workstation
+```
+    
+##### 2.2 Windows
+1. Visit the Chef Workstation downloads page and select the appropriate package for your Windows version. Click on the Download button.  https://downloads.chef.io/products/workstation#windows
+2. Follow the steps to accept the license and install Chef Workstation. You will have the option to change your install location; by default the installer uses the `C:\opscode\chef-workstation\` directory.  
+3. Optional: Set the default shell. On Microsoft Windows it is strongly recommended to use Windows PowerShell instead of cmd.exe.
