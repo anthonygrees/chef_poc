@@ -22,6 +22,15 @@ Step 6: The Developer then initiates a pull request (PR) in the source code mana
 Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc )  picks up the pull request which triggers automated testing and approvals.  
   
   
+## Step 0. Prerequisites
+  
+For the PoC you will require the following:
+- Server for Chef Automate / Chef Server
+- Server or Laptop for Chef Workstation. (Windows or Linux)
+- Server for each node you intend to manage with Chef and scan with InSpec.  
+  
+Note: All the server system requirements are listed below.
+  
 ## Step 1. Install Chef Automate and Chef Server
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
   
