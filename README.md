@@ -19,7 +19,7 @@ Step 3: The Developer now modifies the code and then tests and verifies the code
 Step 4: The Developer then commits the code changes to the local branch.  
 Step 5: The Developer then pushes the branch to the source code management (SCM) repository.  
 Step 6: The Developer then initiates a pull request (PR) in the source code management (SCM) repository.  
-Step 7: The CI/CD pipeline (i.e. Jenkins or Concourse CI or MS VSTS)  picks up the pull request which triggers automated testing and approvals.  
+Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc )  picks up the pull request which triggers automated testing and approvals.  
   
   
 ## Step 1. Install Chef Automate and Chef Server
