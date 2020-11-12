@@ -24,6 +24,7 @@ Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc ) 
   
 ## Step 0. Prerequisites
   
+#### Servers
 For the PoC you will require the following:
 - 1 x Server for Chef Automate / Chef Server
 - 1 x Server or Laptop for Chef Workstation. (Windows or Linux)
@@ -31,6 +32,7 @@ For the PoC you will require the following:
   
 Note: All the server system requirements are listed below.
   
+#### Ports
 For the PoC the Chef servers will require:  
 - Internet access.  (although Chef can be used in an airgapped environment.)
 - Port 443 open
@@ -44,16 +46,16 @@ The nodes will also require:
 ## Step 1. Install Chef Automate and Chef Server
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
   
-### 1. System Requirements
+### 1.1. System Requirements
 For further details please refer to the Chef Docs page - https://docs.chef.io/automate/system_requirements/
   
-#### 1.1 Hardware
+#### 1.1.1 Hardware
 Chef Automate requires a minimum of:  
 - 16 GB of RAM
 - 80 GB of disk space (available to /hab)
 - 4 vCPUs
   
-#### 1.2 Operating system
+#### 1.1.2 Operating system
 Chef Automate requires:  
 - a Linux kernel of version 3.2 or greater
 - systemd as the init system
@@ -62,28 +64,28 @@ Chef Automate requires:
 - The shell that starts Automate should have a max open files setting of at least 65535
 - Commercial support for Chef Automate is available for platforms that satisfy these criteria.
   
-#### 1.3 Supported Browsers
+#### 1.1.3 Supported Browsers
 Chef Automate supports the current browser versions for Chrome, Edge, and Firefox. Chef Automate does not support other browsers and may not be compatible with older browser versions.
   
-### 2. Installation Guide
+### 1.2. Installation Guide
 For further details please refer to the Chef Docs page - https://docs.chef.io/automate/install/
   
-#### 2.1 Download the Chef Automate Command-Line Tool
+#### 1.2.1 Download the Chef Automate Command-Line Tool
 Download and unzip the Chef Automate command-line tool:
 ```bash
 curl https://packages.chef.io/files/current/latest/chef-automate-cli/chef-automate_linux_amd64.zip | gunzip - > chef-automate && chmod +x chef-automate
 ```
   
-#### 2.2 Create Default Configuration
+#### 1.2.2 Create Default Configuration
 Create a `config.toml` file with default values for your Chef Automate installation:
 ```bash
 sudo ./chef-automate init-config
 ```
   
-#### 2.3 Configure Chef Automate
+#### 1.2.3 Configure Chef Automate
 You can customize your FQDN, login name, and other values, by changing the values in the config.toml in your editor.  
   
-#### 2.4 Deploy Chef Automate and Chef Server
+#### 1.2.4 Deploy Chef Automate and Chef Server
 The following command will deploy Chef Automate and Chef Server
 ```bash
 sudo ./chef-automate deploy config.toml --product automate --product chef-server --accept-terms-and-mlsa
@@ -101,11 +103,11 @@ At the end of the deployment process you will see:
 Deploy complete
 ```
   
-#### 2.5 Chef Automate Credentials
+#### 1.2.5 Chef Automate Credentials
 The deployment process writes login credentials to the `automate-credentials.toml` in your current working directory.
   
   
-#### 2.6 Set the Chef Infra Server User and Org
+#### 1.2.6 Set the Chef Infra Server User and Org
   
 First create a `user` on the Chef Server.  The `.pem` file will be used on your developer Chef Workstation machine.
 ```bash
@@ -131,7 +133,7 @@ Chef Workstation includes:
 - Testing tools such as Test Kitchen, ChefSpec, and Cookstyle
 - Everything else needed to author cookbooks and upload them to the Chef Infra Server
   
-#### 1. System Requirements
+#### 2.1. System Requirements
 Minimum system requirements:
 - RAM: 2GB
 - Disk: 4GB
@@ -141,44 +143,44 @@ Recommended system requirements:
 - RAM: 4GB
 - Disk 8GB
   
-#### 2. Installation
+#### 2.2. Installation
 The Chef Workstation installer must run as a privileged user.  
   
 Chef Workstation installs to /opt/chef-workstation/ on macOS / Linux and C:\opscode\chef-workstation\ on Windows. These file locations should help avoid interference between these components and other applications that may be running on the target machine.  
   
-##### 2.1 macOS
-1. Dependency: Xcode is recommended for running Chef Workstation on macOS. While Chef Workstation works without Xcode, it is required for native Ruby Gem installation. Run xcode-select --install from the terminal to install Xcode.  
+##### 2.2.1 macOS
+###### 2.2.1.1. Dependency: Xcode is recommended for running Chef Workstation on macOS. While Chef Workstation works without Xcode, it is required for native Ruby Gem installation. Run xcode-select --install from the terminal to install Xcode.  
   
-2. Visit the Chef Workstation downloads page and select the appropriate package for your macOS version. Click on the Download button.  https://downloads.chef.io/products/workstation#mac_os_x
+###### 2.2.1.2. Visit the Chef Workstation downloads page and select the appropriate package for your macOS version. Click on the Download button.  https://downloads.chef.io/products/workstation#mac_os_x
   
-3. Follow the steps to accept the license and install Chef Workstation.  
+###### 2.2.1.3. Follow the steps to accept the license and install Chef Workstation.  
   
 Alternately, install Chef Workstation using Homebrew:  
 ```bash
 brew cask install chef-workstation
 ```
     
-##### 2.2 Windows
-1. Visit the Chef Workstation downloads page and select the appropriate package for your Windows version. Click on the Download button.  https://downloads.chef.io/products/workstation#windows
+##### 2.2.2 Windows
+###### 2.2.2.1. Visit the Chef Workstation downloads page and select the appropriate package for your Windows version. Click on the Download button.  https://downloads.chef.io/products/workstation#windows
   
-2. Follow the steps to accept the license and install Chef Workstation. You will have the option to change your install location; by default the installer uses the `C:\opscode\chef-workstation\` directory.  
+###### 2.2.2.2. Follow the steps to accept the license and install Chef Workstation. You will have the option to change your install location; by default the installer uses the `C:\opscode\chef-workstation\` directory.  
   
-3. Optional: Set the default shell. On Microsoft Windows it is strongly recommended to use Windows PowerShell instead of cmd.exe.
+###### 2.2.2.3. Optional: Set the default shell. On Microsoft Windows it is strongly recommended to use Windows PowerShell instead of cmd.exe.
   
-#### 3. Configure Chef Workstation
+#### 2.3. Configure Chef Workstation
 Here are the steps to set up a Windows Chef Workstation for development.  
   
-1. Install Chocolatey first as it is really handy.  
+#### 2.3.1. Install Chocolatey first as it is really handy.  
 ```bash
 PowerShell.exe -Command "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
 ```
 
-2. Install Chef Workstation if you have not already done so.  
+#### 2.3.2. Install Chef Workstation if you have not already done so.  
 ```bash
 PowerShell.exe -Command "iex (irm 'https://omnitruck.chef.io/install.ps1'); Install-Project -project chef-workstation -channel stable"
 ```
   
-3. Install the following tools.
+#### 2.3.3. Install the following tools.
 ```bash
 choco install googlechrome -y --no-progress --ignore-checksums
 choco install vscode -y --no-progress
@@ -187,7 +189,7 @@ choco install git -y --no-progress
 choco install openssh -y --pre --no-progress
 ```
   
-4. Configure Git
+#### 2.3.4. Configure Git
 Create a file called `.gitconfig` in the directory `C:\Users\chef\` with the following:
 ```yaml
 [user]
@@ -196,7 +198,7 @@ Create a file called `.gitconfig` in the directory `C:\Users\chef\` with the fol
 ```
 Note: Feel free to use your own values.
   
-5. Configure Knife to speak to your Chef Server
+#### 2.3.5. Configure Knife to speak to your Chef Server
   
 a) Create a directoy for Chef. Run the PowerShell command `chef generate repo c:\chef-repo --chef-license accept`. 
   
@@ -206,7 +208,7 @@ There will be 2 .pem files:
 - chef_user.pem
 - chef_organization.pem
   
-6. Create a `config.rb` so Knife can communicate with Chef Server.  
+#### 2.3.6. Create a `config.rb` so Knife can communicate with Chef Server.  
   
 In the `C:\chef-repo\.chef` directory, create a file called `config.rb`.  To do this you can run the command `code config.rb`.
   
@@ -220,7 +222,7 @@ chef_server_url "https://automate_hostname/organizations/chef_organization"
 cookbook_path ["#{current_dir}/../cookbooks"]
 ```
   
-7. Test Knife config with `knife user list`
+#### 2.3.7. Test Knife config with `knife user list`
 ```bash
 PS C:\chef-repo> knife user list
 anthony
@@ -232,7 +234,10 @@ Note: The user you see will be the one you created on the Chef Server above.
   
 Before you bootstrap your nodes, you need a base policy to apply and the cookbooks.
   
-#### 1. Add Cookbooks to the Chef Server
+#### 3.1. Add Cookbooks to the Chef Server
+  
+  
+#### 3.2. Add Policyfile to the Chef Server
   
   
   
