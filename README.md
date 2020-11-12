@@ -153,4 +153,37 @@ choco install git -y --no-progress
 choco install openssh -y --pre --no-progress
 ```
   
-4. 
+4. Configure Git
+Create a file called `.gitconfig` in the directory `C:\Users\chef\` with the following:
+```json
+[user]
+	email = student@chef.com
+	name = chef
+```
+Note: Feel free to use your own values.
+  
+5. Configure Knife to speak to your Chef Server
+  
+a) Create a directoy for Chef. Run the PowerShell command `chef generate repo c:\chef-repo --chef-license accept`. 
+  
+b) The `.pem` files you created when you configured the Chef Server need to be copied in the directory `C:\chef-repo\.chef`.  
+  
+There will be 2 .pem files:
+- chef_user.pem
+- chef_organization.pem
+  
+6. Create a `config.rb` so Knife can communicate with Chef Server.  
+  
+In the `C:\chef-repo\.chef` directory, create a file called `config.rb`.  To do this you can run the command `code config.rb`.
+  
+```ruby
+current_dir = File.dirname(__FILE__)
+log_level :info
+log_location STDOUT
+node_name "chef_user"
+client_key "#{current_dir}/chef_user.pem"
+chef_server_url "https://automate_hostname/organizations/chef_organization"
+cookbook_path ["#{current_dir}/../cookbooks"]
+```
+
+  
