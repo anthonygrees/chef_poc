@@ -10,6 +10,7 @@
 Chef Software delivers value to our customers by taking an “Enterprise as Code” approach to simplify, standardize and secure day to day operations across both on-premise and multi-cloud environments.  
   
 Here’s an overview of the Chef solution stack:  
+![Architecture Stack](/images/architecture_stack.png "Architecture Stack")
   
   
 ## Step 1. Install Chef Automate and Chef Server
