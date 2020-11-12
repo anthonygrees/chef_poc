@@ -7,6 +7,11 @@
  \____/_| |_|\___|_|   \_|  \___/ \____/  \___/_| |_|___/\__|_|   \__,_|\___|\__|_|\___/|_| |_|___/
  ```
   
+Chef Software delivers value to our customers by taking an “Enterprise as Code” approach to simplify, standardize and secure day to day operations across both on-premise and multi-cloud environments.  
+  
+Here’s an overview of the Chef solution stack:  
+  
+  
 ## Step 1. Install Chef Automate and Chef Server
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
   
