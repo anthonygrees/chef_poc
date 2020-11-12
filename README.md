@@ -233,4 +233,15 @@ Note: The user you see will be the one you created on the Chef Server above.
 Before you bootstrap your nodes, you need a base policy to apply and the cookbooks.
   
 #### 1. Add Cookbooks to the Chef Server
-
+  
+  
+  
+## Step 4. Chef Automate Profiles
+  
+  
+  
+## Step 5. Bootstrap Nodes
+  
+  
+  
+  
