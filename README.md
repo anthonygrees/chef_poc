@@ -7,7 +7,7 @@
  \____/_| |_|\___|_|   \_|  \___/ \____/  \___/_| |_|___/\__|_|   \__,_|\___|\__|_|\___/|_| |_|___/
  ```
   
-## Install Chef Automate and Chef Server
+## Step 1. Install Chef Automate and Chef Server
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
   
 ### 1. System Requirements
@@ -87,7 +87,7 @@ You will need to copy both `.pem` files from the Chef Automate server as they wi
   
   
   
-## Install Chef Workstation
+## Step 2. Install Chef Workstation
 Chef Workstation gives you everything you need to get started with Chef - ad hoc remote execution, remote scanning, configuration tasks, cookbook creation tools as well as robust dependency and testing software - all in one easy-to-install package.  
   
 Chef Workstation includes:
@@ -114,7 +114,9 @@ Chef Workstation installs to /opt/chef-workstation/ on macOS / Linux and C:\opsc
   
 ##### 2.1 macOS
 1. Dependency: Xcode is recommended for running Chef Workstation on macOS. While Chef Workstation works without Xcode, it is required for native Ruby Gem installation. Run xcode-select --install from the terminal to install Xcode.  
+  
 2. Visit the Chef Workstation downloads page and select the appropriate package for your macOS version. Click on the Download button.  https://downloads.chef.io/products/workstation#mac_os_x
+  
 3. Follow the steps to accept the license and install Chef Workstation.  
   
 Alternately, install Chef Workstation using Homebrew:  
@@ -124,5 +126,31 @@ brew cask install chef-workstation
     
 ##### 2.2 Windows
 1. Visit the Chef Workstation downloads page and select the appropriate package for your Windows version. Click on the Download button.  https://downloads.chef.io/products/workstation#windows
+  
 2. Follow the steps to accept the license and install Chef Workstation. You will have the option to change your install location; by default the installer uses the `C:\opscode\chef-workstation\` directory.  
+  
 3. Optional: Set the default shell. On Microsoft Windows it is strongly recommended to use Windows PowerShell instead of cmd.exe.
+  
+#### 3. Configure Chef Workstation
+Here are the steps to set up a Windows Chef Workstation for development.  
+  
+1. Install Chocolatey first as it is really handy.  
+```bash
+PowerShell.exe -Command "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+```
+
+2. Install Chef Workstation if you have not already done so.  
+```bash
+PowerShell.exe -Command "iex (irm 'https://omnitruck.chef.io/install.ps1'); Install-Project -project chef-workstation -channel stable"
+```
+  
+3. Install the following tools.
+```bash
+choco install googlechrome -y --no-progress --ignore-checksums
+choco install vscode -y --no-progress
+choco install cmder -y --no-progress
+choco install git -y --no-progress
+choco install openssh -y --pre --no-progress
+```
+  
+4. 
