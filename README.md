@@ -9,8 +9,17 @@
   
 Chef Software delivers value to our customers by taking an “Enterprise as Code” approach to simplify, standardize and secure day to day operations across both on-premise and multi-cloud environments.  
   
-Here’s an overview of the Chef solution stack:  
-![Architecture Stack](/images/architecture_stack.png "Architecture Stack")
+Here’s an overview of the Chef development workflow:  
+![Dev Workflow](/images/dev_workflow.png "Dev Workflow")
+  
+The following describes the basic local development workflow for creating / modifying both Chef cookbooks and / or InSpec profiles.  
+Step 1: The Developer clones the Chef Cookbook or InSpec Profile from the source code management (SCM) repository.  
+Step 2: The Developer then isolates the code changes by creating a branch.  
+Step 3: The Developer now modifies the code and then tests and verifies the code changes by using Test Kitchen.  
+Step 4: The Developer then commits the code changes to the local branch.  
+Step 5: The Developer then pushes the branch to the source code management (SCM) repository.  
+Step 6: The Developer then initiates a pull request (PR) in the source code management (SCM) repository.  
+Step 7: The CI/CD pipeline (i.e. Jenkins or Concourse CI or MS VSTS)  picks up the pull request which triggers automated testing and approvals.  
   
   
 ## Step 1. Install Chef Automate and Chef Server
