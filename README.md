@@ -209,4 +209,9 @@ anthony
 Note: The user you see will be the one you created on the Chef Server above.
   
   
+## Step 3. Create a `base` policy and upload the Cookbooks you need to the Chef Server
   
+Before you bootstrap your nodes, you need a base policy to apply and the cookbooks.
+  
+#### 1. Add Cookbooks to the Chef Server
+
