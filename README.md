@@ -185,5 +185,13 @@ client_key "#{current_dir}/chef_user.pem"
 chef_server_url "https://automate_hostname/organizations/chef_organization"
 cookbook_path ["#{current_dir}/../cookbooks"]
 ```
-
+  
+7. Test Knife config with `knife user list`
+```bash
+PS C:\chef-repo> knife user list
+anthony
+```
+Note: The user you see will be the one you created on the Chef Server above.
+  
+  
   
