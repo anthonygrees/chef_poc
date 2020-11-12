@@ -25,11 +25,21 @@ Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc ) 
 ## Step 0. Prerequisites
   
 For the PoC you will require the following:
-- Server for Chef Automate / Chef Server
-- Server or Laptop for Chef Workstation. (Windows or Linux)
-- Server for each node you intend to manage with Chef and scan with InSpec.  
+- 1 x Server for Chef Automate / Chef Server
+- 1 x Server or Laptop for Chef Workstation. (Windows or Linux)
+- 1 x Server for each node you intend to manage with Chef and scan with InSpec.  
   
 Note: All the server system requirements are listed below.
+  
+For the PoC the Chef servers will require:  
+- Internet access.  (although Chef can be used in an airgapped environment.)
+- Port 443 open
+- Port 80
+  
+The nodes will also require:  
+- Port 22 SSH and / or 5985 WinRM if you intend to bootstrap via Knife
+- Port 3389 for Windows Remote Desktop 
+  
   
 ## Step 1. Install Chef Automate and Chef Server
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
