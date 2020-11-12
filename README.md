@@ -155,7 +155,7 @@ choco install openssh -y --pre --no-progress
   
 4. Configure Git
 Create a file called `.gitconfig` in the directory `C:\Users\chef\` with the following:
-```json
+```yaml
 [user]
 	email = student@chef.com
 	name = chef
