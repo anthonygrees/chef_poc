@@ -157,8 +157,8 @@ choco install openssh -y --pre --no-progress
 Create a file called `.gitconfig` in the directory `C:\Users\chef\` with the following:
 ```yaml
 [user]
-	email = student@chef.com
-	name = chef
+  email = student@chef.com
+  name = chef
 ```
 Note: Feel free to use your own values.
   
