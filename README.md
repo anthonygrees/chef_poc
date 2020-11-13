@@ -230,18 +230,21 @@ anthony
 Note: The user you see will be the one you created on the Chef Server above.
   
   
-## Step 3. Create a `base` policy and upload the Cookbooks you need to the Chef Server
+## Step 3. Chef Automate Profiles
+Log into Chef automate and select all the profiles you require.
+  
+  
+## Step 4. Create a `base` policy and upload the Cookbooks you need to the Chef Server
   
 Before you bootstrap your nodes, you need a base policy to apply and the cookbooks.
   
-#### 3.1. Add Cookbooks to the Chef Server
+#### 4.1. Add Cookbooks to the Chef Server
   
   
-#### 3.2. Add Policyfile to the Chef Server
+#### 4.2. Add Policyfile to the Chef Server
   
   
-  
-## Step 4. Chef Automate Profiles
+ 
   
   
   
