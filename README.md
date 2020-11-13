@@ -24,7 +24,7 @@ Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc ) 
   
 ## Step 0. Prerequisites
   
-#### Servers
+#### 0.1 Servers
 For the PoC you will require the following:
 - 1 x Server for Chef Automate / Chef Server
 - 1 x Server or Laptop for Chef Workstation. (Windows or Linux)
@@ -32,7 +32,7 @@ For the PoC you will require the following:
   
 Note: All the server system requirements are listed below.
   
-#### Ports
+#### 0.2 Ports
 For the PoC the Chef servers will require:  
 - Internet access.  (although Chef can be used in an airgapped environment.)
 - Port 443 open
