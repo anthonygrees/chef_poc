@@ -250,6 +250,25 @@ Before you bootstrap your nodes, you need a base policy to apply and the cookboo
   
 ## Step 5. Bootstrap Nodes
   
+#### 5.1. Knife bootstrap off the Chef Workstation (Needs Port 22)
+  
+This command runs on the Chef Workstation 
+  
+```bash
+knife bootstrap $node_dns \
+                --node-name $node_name \
+                --connection-user $user \
+                --ssh-identity-file $creds_file \
+                --policy-name $policy_name \
+                --policy-group $policy_group \
+                --connection-port $node_port \
+                --ssh-verify-host-key=never \
+                --chef-license=accept \
+                --sudo \
+                -y
+```
+  
+  
   
   
   
