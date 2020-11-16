@@ -423,6 +423,11 @@ chef install base.rb
 chef push development base.rb
 ```
   
+Check the policy on the Chef Server with the following command:  
+```bash
+chef show-policy base
+```
+  
 ## Step 5. Bootstrap Nodes
   
 #### 5.1 Windows Manual Bootstrap
