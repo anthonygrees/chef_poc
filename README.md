@@ -361,6 +361,8 @@ Now clone all the required Cookbooks.
 ```
   
 Upload the Audit Cookbook. This cookbook is used to automatically run the correct InSpec profiles.  
+  
+NOTE: If you are using a different Chef Automate user you will need to modify the `attributes/defaul.rb`.  Speak to Anthony for help before uploading !   
 ```bash
 cd audit_agr
 berks install -q
