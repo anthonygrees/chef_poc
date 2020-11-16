@@ -451,6 +451,10 @@ chef-client
 ```
   
   
+You should now see your node in Chef Automate under the `Infrastructure` tab:
+![windows](/images/windows.png "Windows")
+  
+  
 #### 5.2 Linux Manual Bootstrap
   
   
