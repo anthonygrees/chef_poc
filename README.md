@@ -26,7 +26,12 @@ Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc ) 
 | Item | Topic  | 
 | :---: |:-------------| 
 |     | **Chef PoC Instructions** |
-| 0.  | [Prerequisites](readme.md) |
+| 0.  | [Prerequisites](README.md#step-0-prerequisites) |
+| 1.  | [Step 1. Install Chef Automate and Chef Server](README.md#step-0-prerequisites) |
+| 2.  | [Prerequisites](README.md#step-0-prerequisites) |
+| 3.  | [Prerequisites](README.md#step-0-prerequisites) |
+| 4.  | [Prerequisites](README.md#step-0-prerequisites) |
+| 5.  | [Prerequisites](README.md#step-0-prerequisites) |
 |     | |
   
   
