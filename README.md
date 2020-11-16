@@ -419,7 +419,24 @@ chef push development base.rb
   
 ## Step 5. Bootstrap Nodes
   
-#### 5.1. Knife bootstrap off the Chef Workstation (Needs Port 22)
+#### 5.1 Windows Manual Bootstrap
+  
+Install the Chef Client on the Windows VM.  Here is the link - https://downloads.chef.io/products/infra-client?os=windows
+  
+Create a `config.rb` file
+  
+#### 5.2 Linux Manual Bootstrap
+  
+Install the Chef Client on the Linux VM.  Here are the download links:  
+- Amazon Linux : https://downloads.chef.io/products/infra-client?os=amazon
+- Debian : https://downloads.chef.io/products/infra-client?os=debian
+- Ubuntu : https://downloads.chef.io/products/infra-client?os=ubuntu
+- RHEL / CentOS : https://downloads.chef.io/products/infra-client?os=el
+  
+Create a `config.rb` file
+
+  
+#### 5.3. Knife bootstrap off the Chef Workstation (Needs Port 22)
   
 This command runs on the Chef Workstation 
   
