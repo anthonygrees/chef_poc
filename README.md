@@ -629,6 +629,27 @@ knife bootstrap $node_dns \
 ```
   
   
+#### 5.4 Knife bootstrap commands
+  
+AWS Centos knife bootstrap.  
+```bash
+knife bootstrap -i ~\.ssh\id_rsa centos@ec2-XX-XXX-XXX-XXX.us-west-2.compute.amazonaws.com -N Your_Node_Name --sudo -run-list 'recipe[Your_Cookbook_Name]'
+```
+  
+  
+AWS RHEL knife bootstrap.  
+```bash
+knife bootstrap -i Path_to_Identity_file  ec2-user@ec2-XX-XXX-XXX-XXX.us-west-2.compute.amazonaws.com -N Your_Node_Name --sudo -run-list 'recipe[Your_Cookbook_Name]'
+```
+  
+  
+AWS Windows knife bootstrap.  
+```bash
+##To bootstrap the node, replace the node IP, Password and Node Name and run the following command
+
+knife bootstrap windows winrm ec2-xx-xxx-xxx-xxx.us-west-2.compute.amazonaws.com --winrm-user Administrator --winrm-password 'PASSWORD' --node-name Your_Node_Name
+```
+  
 #### 5.4 Automated Bulk Bootstrap
   
 Instructions coming soon.
