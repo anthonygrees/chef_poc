@@ -437,8 +437,35 @@ Install the Chef Client on the Linux VM.  Here are the download links:
 - Ubuntu : https://downloads.chef.io/products/infra-client?os=ubuntu
 - RHEL / CentOS : https://downloads.chef.io/products/infra-client?os=el
   
-Create a `config.rb` file
-
+Copy the Org Validator `.pem` file that was created when you configured the Chef Server.  Copy the pem file to:  
+```/etc/chef```
+  
+  
+Create some directories that are needed:  
+```bash
+/bin/mkdir -p /etc/chef
+/bin/mkdir -p /var/lib/chef
+/bin/mkdir -p /var/log/chef
+```
+  
+  
+Create a `client.rb` file in the `/etc/chef/` directory with the following:  
+```ruby
+log_location     STDOUT
+chef_server_url 'https://YOUR_CHEF_AUTOMATE/organizations/YOUR_ORG'
+validation_key '/etc/chef/YOUR_ORG_validator.pem'
+node_name 'CentOS-Reesy-nNGX'
+ssl_verify_mode :verify_none
+policy_group 'development'
+policy_name 'base'
+```
+  
+  
+Now run the following command:  
+```bash
+sudo chef-client
+```
+  
   
 #### 5.3. Knife bootstrap off the Chef Workstation (Needs Port 22)
   
