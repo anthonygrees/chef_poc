@@ -446,6 +446,115 @@ ssl_verify_mode :verify_none
 chef_license 'accept'
 ```
   
+For waivers, create a file called `c:\waiver.yml` and add the following:
+```yaml
+cis-access-cred-manager-2.2.1:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2025"
+cis-act-as-os-2.2.3:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2025"
+cis-add-workstations-2.2.4:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+cis-network-access-2.2.2:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+disable-windows-store:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+microsoft-online-accounts:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-account-100:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-audit-203:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-audit-206:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-base-201:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-ie-101:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+windows-ie-102:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.1_L1_Ensure_LAPS_AdmPwd_GPO_Extension__CSE_is_installed_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.2_L1_Ensure_Do_not_allow_password_expiration_time_longer_than_required_by_policy_is_set_to_Enabled_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.3_L1_Ensure_Enable_Local_Admin_Password_Management_is_set_to_Enabled_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.4_L1_Ensure_Password_Settings_Password_Complexity_is_set_to_Enabled_Large_letters__small_letters__numbers__special_characters_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.5_L1_Ensure_Password_Settings_Password_Length_is_set_to_Enabled_15_or_more_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_18.2.6_L1_Ensure_Password_Settings_Password_Age_Days_is_set_to_Enabled_30_or_fewer_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.2.21_L1_Ensure_Deny_access_to_this_computer_from_the_network_is_set_to_Guests_Local_account_and_member_of_Administrators_group_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.2.26_L1_Ensure_Deny_log_on_through_Remote_Desktop_Services_is_set_to_Guests_Local_account_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.3.1.1_L1_Ensure_Accounts_Administrator_account_status_is_set_to_Disabled_MS_only:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.3.1.5_L1_Configure_Accounts_Rename_administrator_account:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.3.17.1_L1_Ensure_User_Account_Control_Admin_Approval_Mode_for_the_Built-in_Administrator_account_is_set_to_Enabled:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_2.3.7.5_L1_Configure_Interactive_logon_Message_title_for_users_attempting_to_log_on:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_9.3.5_L1_Ensure_Windows_Firewall_Public_Settings_Apply_local_firewall_rules_is_set_to_No:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+cis-network-access-2.2.2:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+```
+  
+This waiver file will be picjed up by the `audit_agr` cookbook and applied.
   
 Now run the following command from a Windows PowerShell terminal running as `Administrator`:  
 ```bash
