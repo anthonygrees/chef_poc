@@ -467,6 +467,10 @@ sudo chef-client
 ```
   
   
+You should now see your node in Chef Automate under the `Infrastructure` tab:
+![linux](/images/linux.png "Linux")
+  
+  
 #### 5.3. Knife bootstrap off the Chef Workstation (Needs Port 22)
   
 This command runs on the Chef Workstation 
