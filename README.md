@@ -22,6 +22,14 @@ Step 6: The Developer then initiates a pull request (PR) in the source code mana
 Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc )  picks up the pull request which triggers automated testing and approvals.  
   
   
+## Index
+| Item | Topic  | 
+| :---: |:-------------| 
+|     | **Chef PoC Instructions** |
+| 0.  | [Prerequisites](readme.md) |
+|     | |
+  
+  
 ## Step 0. Prerequisites
   
 #### 0.1 Servers
