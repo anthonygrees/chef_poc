@@ -213,9 +213,13 @@ Note: Feel free to use your own values.
   
 #### 2.3.5. Configure Knife to speak to your Chef Server
   
-a) Create a directoy for Chef. Run the PowerShell command `chef generate repo c:\chef-repo --chef-license accept`. 
+a) Create a directoy for Chef. Run the PowerShell command:    
+```bash
+chef generate repo c:\chef-repo --chef-license accept
+``` 
   
-b) The `.pem` files you created when you configured the Chef Server need to be copied in the directory `C:\chef-repo\.chef`.  
+b) The `.pem` files you created when you configured the Chef Server need to be copied in the directory:  
+`C:\chef-repo\.chef`   
   
 There will be 2 .pem files:
 - chef_user.pem
