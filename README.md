@@ -425,11 +425,34 @@ chef push development base.rb
   
 #### 5.1 Windows Manual Bootstrap
   
+  
 Install the Chef Client on the Windows VM.  Here is the link - https://downloads.chef.io/products/infra-client?os=windows
   
-Create a `config.rb` file
+  
+Copy the Org Validator `.pem` file that was created when you configured the Chef Server.  Copy the pem file to:  
+```c:\chef\```
+  
+  
+Create a `client.rb` file in the `c:\chef\` directory with the following:  
+```ruby
+chef_server_url 'https://YOUR_CHEF_AUTOMATE/organizations/YOUR_ORG'
+validation_key 'C:/chef/YOUR_ORG_validator.pem'
+node_name 'Win2016-Ant-24223'
+policy_group 'development'
+policy_name 'base'
+ssl_verify_mode :verify_none
+chef_license 'accept'
+```
+  
+  
+Now run the following command from a Windows PowerShell terminal running as `Administrator`:  
+```bash
+chef-client
+```
+  
   
 #### 5.2 Linux Manual Bootstrap
+  
   
 Install the Chef Client on the Linux VM.  Here are the download links:  
 - Amazon Linux : https://downloads.chef.io/products/infra-client?os=amazon
@@ -458,6 +481,7 @@ node_name 'CentOS-Reesy-nNGX'
 ssl_verify_mode :verify_none
 policy_group 'development'
 policy_name 'base'
+chef_license 'accept'
 ```
   
   
