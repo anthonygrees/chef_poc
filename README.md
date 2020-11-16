@@ -459,6 +459,9 @@ knife bootstrap $node_dns \
 ```
   
   
+#### 5.4 Automated Bulk Bootstrap
+  
+Instructions coming soon.
   
   
   
