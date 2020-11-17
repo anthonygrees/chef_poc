@@ -879,7 +879,7 @@ name 'base-win2016'
 include_policy 'base', path: './base.lock.json'
 
 # Where to find external cookbooks:
-default_source :supermarket
+default_source :chef_server, "https://YOUR_AUTOMATE_HOSTNAME/organizations/YOUR_CHEF_ORG"
 
 # Specify a custom source for a single cookbook:
 # cookbook 'example_cookbook', path: '../cookbooks/example_cookbook'
@@ -922,7 +922,7 @@ name 'base-linux'
 include_policy 'base', path: './base.lock.json'
 
 # Where to find external cookbooks:
-default_source :supermarket
+default_source :chef_server, "https://YOUR_AUTOMATE_HOSTNAME/organizations/YOUR_CHEF_ORG"
 
 # Specify a custom source for a single cookbook:
 # cookbook 'example_cookbook', path: '../cookbooks/example_cookbook'
