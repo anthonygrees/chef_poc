@@ -37,6 +37,7 @@ Step 7: The CI/CD pipeline (i.e. Jenkins, Harness, Bamboo or Azure DevOps etc ) 
 | 3.  | [Step 3. Chef Automate Profiles](README.md#step-3-chef-automate-profiles) |
 | 4.  | [Step 4. Create a base policy and upload the Cookbooks you need to the Chef Server](README.md#step-4-create-a-base-policy-and-upload-the-cookbooks-you-need-to-the-chef-server) |
 | 5.  | [Step 5. Bootstrap Nodes](README.md#step-5-bootstrap-nodes) |
+| 6.  | [Step 6. Hardening Nodes](README.md#step-6-hardening-nodes) |
 |     | |
   
   
