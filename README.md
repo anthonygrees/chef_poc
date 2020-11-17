@@ -559,7 +559,7 @@ cis-network-access-2.2.2:
   justification: "Security have signed off not doing this check until the end of February 2021"
 ```
   
-This waiver file will be picjed up by the `audit_agr` cookbook and applied.
+This waiver file will be picked up by the `audit_agr` cookbook and applied.
   
 Now run the following command from a Windows PowerShell terminal running as `Administrator`:  
 ```bash
@@ -603,6 +603,188 @@ policy_group 'development'
 policy_name 'base'
 chef_license 'accept'
 ```
+  
+For waivers, create a file called `/home/centos/waiver.yml` and add the following:
+```yaml
+os-05:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+os-05b:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+os-06:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+os-10:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+package-08:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-05:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-06:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-07:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-08:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-09:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-10:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-18:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-21:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-22:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-23:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-24:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-26:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-27:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-28:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+sysctl-30:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.10_Add_nodev_Option_to_home:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.1_Create_Separate_Partition_for_tmp:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.2_Set_nodev_option_for_tmp_Partition:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.3_Set_nosuid_option_for_tmp_Partition:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.4_Set_noexec_option_for_tmp_Partition:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.5_Create_Separate_Partition_for_var:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.6_Bind_Mount_the_vartmp_directory_to_tmp:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.7_Create_Separate_Partition_for_varlog:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.8_Create_Separate_Partition_for_varlogaudit:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.1.9_Create_Separate_Partition_for_home:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_1.5.3_Set_Boot_Loader_Password:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_3.1_Set_Daemon_umask:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_3.6_Configure_Network_Time_Protocol_NTP:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_3.8_Disable_NFS_and_RPC:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_4.7_Enable_firewalld:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_5.1.4_Create_and_Set_Permissions_on_rsyslog_Log_Files:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_5.1.5_Configure_rsyslog_to_Send_Logs_to_a_Remote_Log_Host:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_6.2.11_Use_Only_Approved_Cipher_in_Counter_Mode:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_6.3.4_Limit_Password_Reuse:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_7.1.1_Set_Password_Expiration_Days:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_7.1.2_Set_Password_Change_Minimum_Number_of_Days:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_7.1.3_Set_Password_Expiring_Warning_Days:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_7.4_Set_Default_umask_for_Users:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+xccdf_org.cisecurity.benchmarks_rule_7.5_Lock_Inactive_User_Accounts:
+  expiration_date: 2025-02-28
+  run: false
+  justification: "Security have signed off not doing this check until the end of February 2021"
+```
+  
+This waiver file will be picked up by the `audit_agr` cookbook and applied.
   
   
 Now run the following command:  
