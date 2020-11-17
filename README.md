@@ -7,6 +7,11 @@
  \____/_| |_|\___|_|   \_|  \___/ \____/  \___/_| |_|___/\__|_|   \__,_|\___|\__|_|\___/|_| |_|___/
  ```
   
+## About
+This repo contains detailed instructions on how to setup and configure a Chef Proof of Concept environment.  
+  
+  
+## The Chef Approach
 Chef Software delivers value to our customers by taking an “Enterprise as Code” approach to simplify, standardize and secure day to day operations across both on-premise and multi-cloud environments.  
   
 Here’s an overview of the Chef development workflow:  
