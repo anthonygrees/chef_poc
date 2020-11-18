@@ -1,4 +1,7 @@
 ## Step 3. Chef Automate Profiles
+  
+[Return to Main Menu](../README.md#index)
+  
 Log into Chef automate and select all the profiles you require.  These profiles need to match the ones specified in the Audit Cookbook otherwise you will receive an error saying the profile cannot be found.  
   
 The Audit Cookbook example I provide uses the following:
@@ -92,4 +95,7 @@ Once you have selected the profiles by clicking the `Get` button on the right ha
   
 ![Automate2](/images/automate2.png "Chef Automate")
   
+  
+  
+[Return to Main Menu](../README.md#index)
   
