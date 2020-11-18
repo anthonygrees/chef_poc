@@ -411,8 +411,17 @@ knife bootstrap windows winrm ec2-xx-xxx-xxx-xxx.us-west-2.compute.amazonaws.com
   
 #### 5.4 Automated Bulk Bootstrap
   
-Instructions coming soon.
+Bootstrapping the chef-client on many nodes in bulk can present a challenge. Using the traditional bootstrapping tools included with the ChefDK (knife bootstrap) to install and register the chef-client on a bulk number (hundreds or thousands) of nodes will result in exhausting resources on the bastion host before your operations are complete, including CPU, memory, and TCP connections.  
   
+Read this blog post first:  
+https://blog.chef.io/bootstrapping-nodes-in-bulk/
+  
+  
+Linux bulk bootstrapping using a bash script - https://github.com/saccy/chef_library/tree/master/knife/bootstrap
+  
+Windows bulk bootstrapping using Microsoft Endpoint Configuration Manager  - https://github.com/jmassardo/Install-Chef-using-ConfigMgr
+  
+Automated bootstrapping with User Data - https://docs.chef.io/install_bootstrap/#bootstrapping-with-user-data
   
     
 [Return to Main Menu](../README.md#index)
