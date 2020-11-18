@@ -1,6 +1,6 @@
 ## Step 0. Prerequisites
   
-[Return to Main Menu](../readme.md#index)
+[Return to Main Menu](../README.md#index)
   
 #### 0.1 Servers
 For the PoC you will require the following:
@@ -22,5 +22,5 @@ The nodes will also require:
   
   
   
-[Return to Main Menu](../readme.md#index)
+[Return to Main Menu](../README.md#index)
   
