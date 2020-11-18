@@ -1,4 +1,7 @@
 ## Step 2. Install Chef Workstation
+  
+[Return to Main Menu](../README.md#index)
+  
 Chef Workstation gives you everything you need to get started with Chef - ad hoc remote execution, remote scanning, configuration tasks, cookbook creation tools as well as robust dependency and testing software - all in one easy-to-install package.  
   
 Chef Workstation includes:
@@ -108,4 +111,8 @@ anthony
 ```
 Note: The user you see will be the one you created on the Chef Server above.
   
+  
+
+  
+[Return to Main Menu](../README.md#index)
   
