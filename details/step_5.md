@@ -1,4 +1,6 @@
 ## Step 5. Bootstrap Nodes
+    
+[Return to Main Menu](../README.md#index)
   
 #### 5.1 Windows Manual Bootstrap
   
@@ -412,4 +414,6 @@ knife bootstrap windows winrm ec2-xx-xxx-xxx-xxx.us-west-2.compute.amazonaws.com
 Instructions coming soon.
   
   
+    
+[Return to Main Menu](../README.md#index)
   
