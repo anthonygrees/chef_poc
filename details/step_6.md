@@ -1,4 +1,6 @@
 ## Step 6. Hardening Nodes
+    
+[Return to Main Menu](../README.md#index)
   
 #### 6.1 Add Chef Hardening cookbooks to the Chef Server
   
@@ -97,4 +99,7 @@ chef push development base-linux.rb
   
 Now you can assign the Linux Node to the policy `base-linux` and it will have the hardening cookbook called `cis-rhel` converged against it.
   
+  
+  
+[Return to Main Menu](../README.md#index)
   
