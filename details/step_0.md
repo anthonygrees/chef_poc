@@ -1,5 +1,7 @@
 ## Step 0. Prerequisites
   
+[Return to Main Menu](../readme.md#index)
+  
 #### 0.1 Servers
 For the PoC you will require the following:
 - 1 x Server for Chef Automate / Chef Server
@@ -18,4 +20,7 @@ The nodes will also require:
 - Port 22 SSH and / or 5985 WinRM if you intend to bootstrap via Knife
 - Port 3389 for Windows Remote Desktop 
   
+  
+  
+[Return to Main Menu](../readme.md#index)
   
