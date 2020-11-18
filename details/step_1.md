@@ -1,4 +1,7 @@
 ## Step 1. Install Chef Automate and Chef Server
+  
+[Return to Main Menu](../README.md#index)
+  
 For a PoC we can install Chef Automate and Chef Server using an `all in one` deployment pattern.  
   
 ### 1.1. System Requirements
@@ -77,4 +80,7 @@ sudo chef-server-ctl org-create Your_Org_Name 'automate' --association_user Your
 You will need to copy both `.pem` files from the Chef Automate server as they will be needed on the developer Chef Workstation.
   
   
+  
+  
+[Return to Main Menu](../README.md#index)
   
