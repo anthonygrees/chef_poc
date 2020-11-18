@@ -1,4 +1,6 @@
 ## Step 4. Create a `base` policy and upload the Cookbooks you need to the Chef Server
+    
+[Return to Main Menu](../README.md#index)
   
 Before you bootstrap your nodes, you need a base policy to apply and the cookbooks.
   
@@ -83,4 +85,7 @@ Check the policy on the Chef Server with the following command:
 ```bash
 chef show-policy base
 ```
+  
+  
+[Return to Main Menu](../README.md#index)
   
