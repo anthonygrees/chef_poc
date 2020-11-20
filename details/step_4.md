@@ -89,3 +89,8 @@ chef show-policy base
   
 [Return to Main Menu](../README.md#index)
   
+  
+## Next Step
+  
+[Next Steps >> Step 5](/details/step_5.md)
+  
