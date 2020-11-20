@@ -84,3 +84,8 @@ You will need to copy both `.pem` files from the Chef Automate server as they wi
   
 [Return to Main Menu](../README.md#index)
   
+  
+## Next Step
+  
+[Next Steps >> Step 2](/details/step_2.md)
+  
