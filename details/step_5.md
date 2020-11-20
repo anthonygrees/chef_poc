@@ -426,3 +426,8 @@ Automated bootstrapping with User Data - https://docs.chef.io/install_bootstrap/
     
 [Return to Main Menu](../README.md#index)
   
+  
+## Next Step
+  
+[Next Steps >> Step 6](/details/step_6.md)
+  
