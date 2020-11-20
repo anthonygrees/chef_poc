@@ -99,3 +99,8 @@ Once you have selected the profiles by clicking the `Get` button on the right ha
   
 [Return to Main Menu](../README.md#index)
   
+  
+## Next Step
+  
+[Next Steps >> Step 4](/details/step_4.md)
+  
