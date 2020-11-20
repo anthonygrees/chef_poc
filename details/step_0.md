@@ -24,4 +24,4 @@ The nodes will also require:
   
 [Return to Main Menu](../README.md#index)
   
-[Next Steps >> Step 1](/step_1.md)
+[Next Steps >> Step 1](/details/step_1.md)
