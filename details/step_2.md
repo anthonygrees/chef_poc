@@ -116,3 +116,8 @@ Note: The user you see will be the one you created on the Chef Server above.
   
 [Return to Main Menu](../README.md#index)
   
+  
+## Next Step
+  
+[Next Steps >> Step 3](/details/step_3.md)
+  
