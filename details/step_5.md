@@ -1,11 +1,13 @@
 ## Step 5. Bootstrap Nodes
     
 [Return to Main Menu](../README.md#index)
+
+WARNING: Please use Chef Client version 16.2 in order to successful run this POC repo with Audit Cookbook and policies (download links have been updated below)
   
 #### 5.1 Windows Manual Bootstrap
   
   
-Install the Chef Client on the Windows VM.  Here is the link - https://downloads.chef.io/products/infra-client?os=windows
+Install the Chef Client on the Windows VM.  Here is the link - https://downloads.chef.io/tools/infra-client/stable?v=16.2.73&os=windows
   
   
 Copy the Org Validator `.pem` file that was created when you configured the Chef Server.  Copy the pem file to:  
@@ -147,10 +149,10 @@ You should now see your node in Chef Automate under the `Infrastructure` tab:
   
   
 Install the Chef Client on the Linux VM.  Here are the download links:  
-- Amazon Linux : https://downloads.chef.io/products/infra-client?os=amazon
-- Debian : https://downloads.chef.io/products/infra-client?os=debian
-- Ubuntu : https://downloads.chef.io/products/infra-client?os=ubuntu
-- RHEL / CentOS : https://downloads.chef.io/products/infra-client?os=el
+- Amazon Linux : https://downloads.chef.io/tools/infra-client/stable?v=16.2.73&os=amazon
+- Debian : https://downloads.chef.io/tools/infra-client/stable?v=16.2.73&os=debian
+- Ubuntu : https://downloads.chef.io/tools/infra-client/stable?v=16.2.73&os=ubuntu
+- RHEL / CentOS : https://downloads.chef.io/tools/infra-client/stable?v=16.2.73&os=el
   
 Copy the Org Validator `.pem` file that was created when you configured the Chef Server.  Copy the pem file to:  
 ```/etc/chef```
